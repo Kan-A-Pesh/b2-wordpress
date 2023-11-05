@@ -1,0 +1,36 @@
+.post-type-archive-revetements h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.post-type-archive-revetements .archive-wrapper {
+    border: 1px solid #0d5b8f30;
+    padding: 0 1rem;
+}
+
+.post-type-archive-revetements .archive-wrapper article {
+    display: flex;
+    border-bottom: 1px solid #0d5b8f30;
+    gap: 1rem;
+
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.post-type-archive-revetements .archive-wrapper article > img {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .post-type-archive-revetements h1 {
+        font-size: 2rem;
+    }
+
+    .post-type-archive-revetements .archive-wrapper article {
+        flex-direction: column;
+    }
+}

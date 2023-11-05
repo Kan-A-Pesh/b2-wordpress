@@ -1,0 +1,78 @@
+/*!
+Theme Name: KanATheme
+Theme URI: http://underscores.me/
+Author: Kan-A-Pesh
+Author URI: https://kan-a-pesh.fr
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: kanatheme
+--------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url(css/archive-revetements.css);
+@import url(css/archive-bois.css);
+
+@import url(css/single-revetements.css);
+@import url(css/single-bois.css);
+
+@import url(css/components/index.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #f3f6f7;
+    --black: #000108;
+    --primary: #0d5b8f;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black);
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 3rem 6rem;
+    }
+}

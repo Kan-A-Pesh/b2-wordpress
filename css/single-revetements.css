@@ -1,0 +1,61 @@
+.single-revetements {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.thumbnail-revetements {
+    width: min(100%, 300px);
+}
+
+.thumbnail-revetements img {
+    width: 100%;
+    height: auto;
+}
+
+.content-revetements {
+    min-width: min(100%, 450px);
+    flex-grow: 1;
+}
+
+.content-revetements h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-revetements .stats {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid #0d5b8f30;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 3rem;
+}
+
+.content-revetements .stats span.badge-revetements {
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}
+
+span.badge-revetements.badge-value-1-8 {
+    background-color: #0d5b8f;
+    color: #fff;
+}
+
+span.badge-revetements.badge-value-2-0 {
+    background-color: #160d8f;
+    color: #fff;
+}
+
+span.badge-revetements.badge-value-2-2 {
+    background-color: #8f0d5b;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .single-revetements {
+        flex-wrap: wrap;
+    }
+}
